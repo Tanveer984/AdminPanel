@@ -1,0 +1,25 @@
+
+.Table{
+
+    .margn{
+
+        padding: 510px;
+        
+        .status{
+            padding: 5px;
+            border-radius: 10px;
+        height: fit-content;
+        &.Approved{
+            color: green;
+            background-color: rgba(144, 238, 144, 0.603);
+            text-align: center; 
+            
+        }
+        &.Pending{
+            color: goldenrod;
+            background-color: rgba(223, 231, 102, 0.274);
+            text-align: center;
+        }
+    }
+}
+}

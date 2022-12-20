@@ -1,0 +1,44 @@
+.datatable{
+    height:600px;
+    padding: 20px;
+    a{
+        text-decoration: none;
+    }
+    .cellImg{
+        width:40px;
+        height:40px;
+        border-radius: 50%;
+        border:0.2px solid gray;
+        margin-right: 10px;
+        object-fit: cover;
+    }
+    .cellwithStatus{
+        padding: 5px;
+        &.active{
+            color: green;
+            padding: 5px;
+            background-color: rgba(144, 238, 144, 0.322);
+            border-radius: 10px;
+        }
+        &.inActive{
+            color: red;
+            background-color: rgba(220, 20, 60, 0.281);
+            border-radius: 10px;
+            
+        }
+    }
+    .colAction{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        outline: none;
+    }
+    .dataTableTitle{
+        display: flex;justify-content: space-between;
+        p{
+            color:gray
+        }
+    }
+    
+}

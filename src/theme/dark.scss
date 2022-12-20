@@ -1,0 +1,53 @@
+.app.dark{
+    background-color: rgba(0, 0, 0, 0.904);
+    color:whitesmoke;
+    .colorGrid{
+        stroke:rgba(228,338,228,0.219)
+    }
+    .table{
+        color:whitesmoke;
+    }
+    .sidebar{
+        border-color:#333;
+        .sidebar-logo{
+            .logo{
+                color:#999;
+            }
+        }
+        .sidebar-center{
+            ul a{
+                color:#999;
+            }
+            ul a li{
+                &:hover{
+                    background-color: #333;
+                }
+            }
+            ul>li{
+                color:#999;
+                &:hover{
+                    background-color: #333;
+                }
+            }
+            
+        }
+    }
+    .navBar{
+        border-color:#333 ;
+        .navInputAndButton{
+            border-color:#333
+        }
+    }
+    .datatable{
+        .dataGrid,.cellwithStatus{
+        color:whitesmoke;
+        border:none;
+        checkboxSelection{
+            color:whitesmoke;
+        }
+        }
+    }
+    input{
+        background-color: transparent;
+    }
+}

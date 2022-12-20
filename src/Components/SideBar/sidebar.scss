@@ -1,0 +1,108 @@
+.sidebar{
+    flex: 1;
+    border-right: 0.5px solid rgb(243, 240, 240);
+    min-height: 100vh;
+
+    .sidebar-logo{
+        height: 50px;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: -18px;
+            a{
+                text-decoration: none;
+                
+            }
+        .logo{
+            color: blueviolet;
+            font-size: 20px;
+            font-weight: bold;    
+        }
+        
+    }
+    hr{
+        border:0.3px solid lightgray;
+        line-height: 0;
+    }
+
+    .sidebar-center{
+        // center div begin
+        padding-left: 1rem;
+
+        ul{
+            .title{
+                color: #999;
+                font-size: 12px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-top: 10px;
+            }
+        } 
+        ul a{
+            text-decoration: none;
+            color:blueviolet;
+            
+        }
+        ul a li{
+            list-style: none;
+            font-size: 13.5px;
+            font-weight: 600;
+            padding: 4px;
+            span{
+                margin-left: 5px;
+            }
+            &:hover{
+                background-color: rgb(238, 230, 230);
+            }
+        }
+
+        ul>li{
+            list-style: none;
+            color: #888;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color:blueviolet;
+            span{
+                font-size: 13px;
+                font-weight: 600;
+                margin-left: 5px;
+            }
+
+            &:hover{
+                background-color: rgb(238, 230, 230);
+            }
+        }
+        // center end here
+    }
+
+    .sidebar-thememode{
+        display: flex;
+        
+        h5{
+            color: rgb(99, 93, 93);
+            margin-left: 10px;
+        }
+        .colorOptions{
+            border: 1px solid #888;
+            border-radius: 10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+
+            &:nth-child(2){
+                background-color:whitesmoke;
+                margin-left: 10px;
+                
+            }
+            &:nth-child(3){
+                background-color:black;
+                margin-left: 10px;
+            
+            }
+
+        }
+    }
+
+}

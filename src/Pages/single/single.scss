@@ -1,0 +1,83 @@
+.singleproduct{
+    display: flex;
+    .singlecontainer{
+        flex:6;
+        .title{
+            font-size: 16px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        .top{
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            .left{
+                flex:1;
+                position: relative;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+                h4{
+                    text-align: center;
+                    padding: 5px;
+                }
+                .Editbutton,.Editbuttondisplay{
+                    position: absolute;
+                    right:20px;
+                    font-size: 20px;
+                    z-index: 0;
+
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 1;
+                    }
+
+                }
+                .Editbuttondisplay{
+                    opacity: 0;
+                    top: 60px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    box-shadow: rgba(12, 12, 12, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+                    z-index: 1;
+                }
+                .item{
+                    display: flex;
+                    margin-top: 50px;
+                    justify-content: space-evenly;
+                    .itemImg{
+                        width: 130px;
+                        height: 130px;
+                        padding: 10px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    .details{
+                        color:gray;
+
+                        .itemdetails{
+                            display: flex;
+                            gap: 20px;
+                            margin-bottom: 10px;
+                            .itemkey{
+                                font-weight: 500;
+                            }
+
+                        }
+                    }
+                    
+                }
+            }
+            .right{
+                flex:2;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+            }
+        }
+        .bottom{
+            padding: 20px;
+
+        }
+        
+    }
+    
+}
